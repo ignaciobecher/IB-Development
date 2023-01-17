@@ -14,7 +14,7 @@ body {
   height: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #fdf0d5;
+  background-color: #edddd4;
 }
 .img-container {
   height: 100px;
@@ -43,4 +43,23 @@ body {
 
 .header-links a:hover {
   color: #8338ec;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  filter: brightness(50%);
+}
+
+.p-container p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
 }
