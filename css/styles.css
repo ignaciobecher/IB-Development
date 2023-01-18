@@ -111,6 +111,19 @@ body {
 .product-2,
 .product-3 {
   text-align: center;
+  transition-duration: 1s;
+}
+
+.products-container .product-1:hover {
+  font-size: 20px;
+}
+
+.products-container .product-2:hover {
+  font-size: 20px;
+}
+
+.products-container .product-3:hover {
+  font-size: 20px;
 }
 
 .products-container .product-1 h3 {
