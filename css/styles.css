@@ -113,6 +113,18 @@ body {
   text-align: center;
 }
 
+.products-container .product-1 h3 {
+  color: #15616d;
+}
+
+.products-container .product-2 h3 {
+  color: #15616d;
+}
+
+.products-container .product-3 h3 {
+  color: #15616d;
+}
+
 .products-container .product-1 p {
   padding-top: 20px;
   padding-bottom: 20px;
