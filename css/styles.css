@@ -78,7 +78,7 @@ body {
 }
 
 .p-container a:hover {
-  color: #ff7d00;
+  color: white;
   font-size: 41px;
   border-top: 1px #ff7d00 solid;
   border-bottom: 1px #ff7d00 solid;
@@ -250,4 +250,118 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   height: 20px;
+}
+
+/*??????????????????DISPOSITIVOS MOVILES HASTA 480PX????????????????????*/
+
+@media only screen and (max-width: 480px) {
+  /* !!!!!!!!!!!!!!!!!!!!HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .img-container {
+    display: grid;
+    grid-column: 1;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  /* !!!!!!!!!!!!!!!!!!!!INTRODUCCION !!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .image-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-container p {
+    font-size: 10px;
+  }
+
+  .image-container a {
+    position: absolute;
+    left: 0px;
+  }
+
+  .image-container a:hover {
+    font-size: 10px;
+    color: white;
+  }
+
+  /* !!!!!!!!!!!!!!!!!!!!PRODUCTOS !!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+  .products-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .products-container .product-1 {
+    border-left: white;
+    border-right: white;
+    border-top: #15616d 1px solid;
+    border-bottom: #15616d 1px solid;
+    margin-bottom: 50px;
+  }
+
+  .products-container .product-2 {
+    border-left: white;
+    border-right: white;
+    border-top: #15616d 1px solid;
+    border-bottom: #15616d 1px solid;
+    margin-bottom: 50px;
+  }
+
+  .products-container .product-3 {
+    border-left: white;
+    border-right: white;
+    border-top: #15616d 1px solid;
+    border-bottom: #15616d 1px solid;
+    margin-bottom: 50px;
+  }
+  .products-container .product-1:hover {
+    pointer-events: none;
+  }
+
+  .products-container .product-2:hover {
+    pointer-events: none;
+  }
+
+  .products-container .product-3:hover {
+    pointer-events: none;
+  }
+
+  /* !!!!!!!!!!!!!!!!!!!!FORMULARIO !!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .contact-container label {
+    display: grid;
+    grid-column: 1;
+    margin-left: 20px;
+  }
+
+  .contact-container input {
+    display: grid;
+    grid-column: 2;
+    margin-right: 20px;
+  }
+
+  .contact-container button {
+    display: grid;
+    grid-column: 2;
+    margin-right: 20px;
+  }
 }
