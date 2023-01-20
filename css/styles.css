@@ -252,23 +252,59 @@ body {
   height: 20px;
 }
 
+.mobile-buttons {
+  display: none;
+}
+
 /*??????????????????DISPOSITIVOS MOVILES HASTA 480PX????????????????????*/
 
 @media only screen and (max-width: 480px) {
   /* !!!!!!!!!!!!!!!!!!!!HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
   .container {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .img-container {
-    display: grid;
-    grid-column: 1;
-  }
-
-  .header-links {
     display: none;
+    grid-template-columns: 1fr 1fr;
+    position: relative; /*Modificado*/
+    height: 200px; /*Modificado*/
+  }
+
+  /* !!!!!!!!!!!!!!!!!!!!HEADER RESPONSIVE !!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .responsive-header {
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+    background-color: #ffecd1;
+  }
+
+  .responsive-header #btn-menu {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .responsive-header img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .header-links-responsive {
+    display: none;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+  }
+
+  .header-links-responsive a {
+    width: auto;
+    color: black;
+    text-decoration: none;
+    text-align: right;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  .header-links-responsive #btn-close {
+    margin-left: 205px;
+    margin-top: 10px;
   }
 
   /* !!!!!!!!!!!!!!!!!!!!INTRODUCCION !!!!!!!!!!!!!!!!!!!!!!!!!!*/
