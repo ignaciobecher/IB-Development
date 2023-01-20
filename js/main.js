@@ -13,12 +13,16 @@ const btnClose = document.getElementById("btn-close");
 const linksResponsive = document.getElementById("links-responsive");
 const headerResponsive = document.getElementById("responsive-header");
 
-btnClose.addEventListener("click", () => {
+btnClose.addEventListener("click", (e) => {
+  e.preventDefault();
   linksResponsive.style.display = "none";
+  headerResponsive.style.height = "100px";
+  btnMenu.style.display = "grid";
 });
 
 btnMenu.addEventListener("click", (e) => {
   e.preventDefault();
+  headerResponsive.style.height = "280px";
   linksResponsive.style.display = "grid";
   btnMenu.style.display = "none";
 });
