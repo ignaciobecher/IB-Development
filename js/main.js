@@ -27,6 +27,12 @@ btnMenu.addEventListener("click", (e) => {
   btnMenu.style.display = "none";
 });
 
+const formObject = {
+  nameSurn: "",
+  mail: "",
+  consult: "",
+};
+
 //FUNCION ENVIO DE FORMULARIO (VALIDACION)
 //Funcion para limpiar campos
 function clearFields() {
@@ -44,11 +50,12 @@ btnSend.addEventListener("click", (e) => {
     window.alert("Todos los campos son obligatorios");
   } else if (
     valueName.length >= 5 ||
-    valueMail.value.match(validRegex) ||
+    valueMail.length >= 5 ||
     valueConsult.length >= 5
   ) {
     confirmationWindow.style.display = "block";
     clearFields();
+    console.log(formObject);
     setTimeout(() => {
       confirmationWindow.style.display = "none";
     }, 7000);
